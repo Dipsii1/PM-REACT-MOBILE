@@ -13,7 +13,8 @@ export default function RootLayout() {
   return (
     <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
       <Stack>
-        {/* <Stack.Screen name="tailwind" options={{headerShown: false}}/> */}
+        <Stack.Screen name="pokemon" options={{headerShown: false}}/>
+        <Stack.Screen name="tailwind" options={{headerShown: false}}/>
         <Stack.Screen name='index' options={{headerShown:false}}/>
         <Stack.Screen name='detail' options={{headerShown:false}}/>
         <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
